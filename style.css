@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #5168ee;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin-top: 100px;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link,
+.secondary-link {
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.primary-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 2rem 0;
+}
+
+.about-paragraphs p {
+  margin: 0.625rem;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .primary-link,
+  .secondary-link {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .email-link {
+    font-size: 1.5rem;
+  }
+
+  .about-paragraphs {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .primary-link,
+  .secondary-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .email-link {
+    font-size: 1.25rem;
+  }
+}
